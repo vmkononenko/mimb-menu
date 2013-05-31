@@ -18,22 +18,6 @@ root (0xff)
 kernel /isolinux/rescue64 isoloop=/boot/Live/systemrescuecd-x86-3.6.0.iso setkmap=us dostartx
 initrd /isolinux/initram.igz
 
-title ALT Linux server light Rescue i586 
-find --set-root /boot/Install/ALTLinux_server_light/Platform6-1.1.7-20110616-server-light-i586-ru-install-cd.iso
-map /boot/Install/ALTLinux_server_light/Platform6-1.1.7-20110616-server-light-i586-ru-install-cd.iso (0xff) || map --mem /boot/Install/ALTLinux_server_light/Platform6-1.1.7-20110616-server-light-i586-ru-install-cd.iso (0xff)
-map --hook
-root (0xff)
-kernel /syslinux/alt0/vmlinuz live ramdisk_size=83207 fastboot stagename=rescue showopts automatic=method:disk,uuid:709D-37F7,directory:/boot/Install/ALTLinux_server_light/Platform6-1.1.7-20110616-server-light-i586-ru-install-cd.iso
-initrd /syslinux/alt0/full.cz
-
-title ALT Linux server light Rescue x86_64
-find --set-root /boot/Install/ALTLinux_server_light/Platform6-1.1.7-20110616-server-light-x86_64-ru-install-cd.iso
-map /boot/Install/ALTLinux_server_light/Platform6-1.1.7-20110616-server-light-x86_64-ru-install-cd.iso (0xff) || map --mem /boot/Install/ALTLinux_server_light/Platform6-1.1.7-20110616-server-light-x86_64-ru-install-cd.iso (0xff)
-map --hook
-root (0xff)
-kernel /syslinux/alt0/vmlinuz live ramdisk_size=83207 fastboot stagename=rescue showopts automatic=method:disk,uuid:709D-37F7,directory:/boot/Install/ALTLinux_server_light/Platform6-1.1.7-20110616-server-light-x86_64-ru-install-cd.iso
-initrd /syslinux/alt0/full.cz
-
 title GParted Live 0.16.1
 find --set-root /boot/Live/gparted-live-0.16.1-1-i486.iso
 map /boot/Live/gparted-live-0.16.1-1-i486.iso (0xff) || map --mem /boot/Live/gparted-live-0.16.1-1-i486.iso (0xff)

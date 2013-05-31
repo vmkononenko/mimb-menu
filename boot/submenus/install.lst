@@ -6,10 +6,6 @@ title CentOS -->
 find --set-root /boot/submenus/centos.lst
 configfile /boot/submenus/centos.lst
 
-title ALT Linux -->
-find --set-root /boot/submenus/altlinux.lst
-configfile /boot/submenus/altlinux.lst
-
 title Debian GNU/Linux -->
 find --set-root /boot/submenus/debian.lst
 configfile /boot/submenus/debian.lst
