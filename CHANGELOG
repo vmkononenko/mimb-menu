@@ -1,0 +1,9 @@
+Changes in MIMB v1.0.1			Sep 12, 2012
+
+    * SystemRescueCd updated to version 3.0.0
+    * Keymap sets to "us" and startx runs automatically for both 32 and 64 bit version of SystemRescueCd
+    * Version convention changed
+
+Changes in MIMB v1.00			Aug 12, 2012
+
+    * The first public version.

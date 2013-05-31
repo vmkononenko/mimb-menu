@@ -1,0 +1,21 @@
+title <-- Back
+find --set-root /boot/submenus/install.lst
+configfile /boot/submenus/install.lst
+
+title Debian 6.0.5 i386
+kernel /boot/Install/Debian/i386/install/vmlinuz
+initrd /boot/Install/Debian/i386/install/initrd.gz
+
+title Debian 6.0.5 i386 Graphical Install
+kernel /boot/Install/Debian/i386/graphical_install/vmlinuz priority=low vga=788 --
+initrd /boot/Install/Debian/i386/graphical_install/initrd.gz
+
+title Debian 6.0.5 amd64
+kernel /boot/Install/Debian/i386/install/vmlinuz
+initrd /boot/Install/Debian/i386/install/initrd.gz
+
+title Debian 6.0.5 amd64 Graphical Install
+kernel /boot/Install/Debian/amd64/graphical_install/vmlinuz priority=low vga=788 --
+initrd /boot/Install/Debian/amd64/graphical_install/initrd.gz
+
+

@@ -1,0 +1,13 @@
+title <-- Back
+find --set-root /boot/submenus/install.lst
+configfile /boot/submenus/install.lst
+
+title CentOS 6.3 i386 netinstall
+kernel /boot/Install/CentOS/i386/vmlinuz method=hd:UUID=709D-37F7:/boot/Install/CentOS/i386
+initrd /boot/Install/CentOS/i386/initrd.img
+
+title CentOS 6.3 x86_64 netinstall
+kernel /boot/Install/CentOS/x86_64/vmlinuz method=hd:UUID=709D-37F7:/boot/Install/CentOS/x86_64
+initrd /boot/Install/CentOS/x86_64/initrd.img
+
+
