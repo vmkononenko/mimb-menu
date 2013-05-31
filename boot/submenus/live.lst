@@ -26,6 +26,14 @@ root (0xff)
 kernel /live/vmlinuz boot=live config union=aufs noswap noprompt ip=frommedia nosplash findiso=/boot/Live/gparted-live-0.16.1-1-i486.iso toram=filesystem.squashfs
 initrd /live/initrd.img
 
+title Ubuntu 13.04 desktop amd64 live
+find --set-root /boot/Install/Ubuntu/ubuntu-13.04-desktop-amd64.iso
+map /boot/Install/Ubuntu/ubuntu-13.04-desktop-amd64.iso (0xff) || map --mem /boot/Install/Ubuntu/ubuntu-13.04-desktop-amd64.iso (0xff)
+map --hook
+root (0xff)
+kernel /casper/vmlinuz.efi file=/cdrom/preseed/ubuntu.seed boot=casper iso-scan/filename=/boot/Install/Ubuntu/ubuntu-13.04-desktop-amd64.iso quiet splash --
+initrd=/casper/initrd.lz
+
 title Clonezilla Live 1.2.12-67
 find --set-root /boot/Live/clonezilla-live-20120620-precise.iso
 map /boot/Live/clonezilla-live-20120620-precise.iso (0xff) || map --mem /boot/Live/clonezilla-live-20120620-precise.iso (0xff)

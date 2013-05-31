@@ -1,0 +1,12 @@
+title <-- Back
+find --set-root /boot/submenus/install.lst
+configfile /boot/submenus/install.lst
+
+title Ubuntu 13.04 desktop amd64 live
+find --set-root /boot/Install/Ubuntu/ubuntu-13.04-desktop-amd64.iso
+map /boot/Install/Ubuntu/ubuntu-13.04-desktop-amd64.iso (0xff) || map --mem /boot/Install/Ubuntu/ubuntu-13.04-desktop-amd64.iso (0xff)
+map --hook
+root (0xff)
+kernel /casper/vmlinuz.efi file=/cdrom/preseed/ubuntu.seed boot=casper iso-scan/filename=/boot/Install/Ubuntu/ubuntu-13.04-desktop-amd64.iso quiet splash --
+initrd=/casper/initrd.lz
+

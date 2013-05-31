@@ -2,6 +2,10 @@ title <-- Back
 find --set-root /menu.lst
 configfile /menu.lst
 
+title Ubuntu -->
+find --set-root /boot/submenus/ubuntu.lst
+configfile /boot/submenus/ubuntu.lst
+
 title CentOS -->
 find --set-root /boot/submenus/centos.lst
 configfile /boot/submenus/centos.lst
@@ -9,5 +13,3 @@ configfile /boot/submenus/centos.lst
 title Debian GNU/Linux -->
 find --set-root /boot/submenus/debian.lst
 configfile /boot/submenus/debian.lst
-
-
