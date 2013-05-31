@@ -2,20 +2,20 @@ title <-- Back
 find --set-root /menu.lst
 configfile /menu.lst
 
-title SystemRescueCd 3.0.0
-find --set-root /boot/Live/systemrescuecd-x86-3.0.0.iso
-map /boot/Live/systemrescuecd-x86-3.0.0.iso (0xff) || map --mem /boot/Live/systemrescuecd-x86-3.0.0.iso (0xff)
+title SystemRescueCd 3.6.0
+find --set-root /boot/Live/systemrescuecd-x86-3.6.0.iso
+map /boot/Live/systemrescuecd-x86-3.6.0.iso (0xff) || map --mem /boot/Live/systemrescuecd-x86-3.6.0.iso (0xff)
 map --hook
 root (0xff)
-kernel /isolinux/rescue32 isoloop=boot/Live/systemrescuecd-x86-3.0.0.iso setkmap=us dostartx
+kernel /isolinux/rescue32 isoloop=boot/Live/systemrescuecd-x86-3.6.0.iso setkmap=us dostartx
 initrd /isolinux/initram.igz
 
-title SystemRescueCd 3.0.0 64-bit kernel
-find --set-root /boot/Live/systemrescuecd-x86-3.0.0.iso
-map /boot/Live/systemrescuecd-x86-3.0.0.iso (0xff) || map --mem /boot/Live/systemrescuecd-x86-3.0.0.iso (0xff)
+title SystemRescueCd 3.6.0 64-bit kernel
+find --set-root /boot/Live/systemrescuecd-x86-3.6.0.iso
+map /boot/Live/systemrescuecd-x86-3.6.0.iso (0xff) || map --mem /boot/Live/systemrescuecd-x86-3.6.0.iso (0xff)
 map --hook
 root (0xff)
-kernel /isolinux/rescue64 isoloop=/boot/Live/systemrescuecd-x86-3.0.0.iso setkmap=us dostartx
+kernel /isolinux/rescue64 isoloop=/boot/Live/systemrescuecd-x86-3.6.0.iso setkmap=us dostartx
 initrd /isolinux/initram.igz
 
 title ALT Linux server light Rescue i586 
