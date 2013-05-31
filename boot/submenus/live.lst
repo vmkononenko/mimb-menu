@@ -34,12 +34,12 @@ root (0xff)
 kernel /syslinux/alt0/vmlinuz live ramdisk_size=83207 fastboot stagename=rescue showopts automatic=method:disk,uuid:709D-37F7,directory:/boot/Install/ALTLinux_server_light/Platform6-1.1.7-20110616-server-light-x86_64-ru-install-cd.iso
 initrd /syslinux/alt0/full.cz
 
-title GParted Live 0.13.1
-find --set-root /boot/Live/gparted-live-0.13.1-2.iso
-map /boot/Live/gparted-live-0.13.1-2.iso (0xff) || map --mem /boot/Live/gparted-live-0.13.1-2.iso (0xff)
+title GParted Live 0.16.1
+find --set-root /boot/Live/gparted-live-0.16.1-1-i486.iso
+map /boot/Live/gparted-live-0.16.1-1-i486.iso (0xff) || map --mem /boot/Live/gparted-live-0.16.1-1-i486.iso (0xff)
 map --hook
 root (0xff)
-kernel /live/vmlinuz  boot=live config union=aufs noswap noprompt vga=788 ip=frommedia findiso=/boot/Live/gparted-live-0.13.1-2.iso toram=filesystem.squashfs
+kernel /live/vmlinuz boot=live config union=aufs noswap noprompt ip=frommedia nosplash findiso=/boot/Live/gparted-live-0.16.1-1-i486.iso toram=filesystem.squashfs
 initrd /live/initrd.img
 
 title Clonezilla Live 1.2.12-67
